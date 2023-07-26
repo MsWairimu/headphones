@@ -1,1 +1,34 @@
+.pentagon-container {
+  display: flex;
+}
 
+.pentagon {
+  width: 100px;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 86.6px 50px; /* These values create a regular pentagon */
+  border-color: transparent transparent #007bff transparent; /* Blue color, change as needed */
+  position: relative;
+  margin: 10px;
+}
+
+/* Using ::before and ::after to create the inner and outer shapes */
+.pentagon::before,
+.pentagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-style: solid;
+}
+
+.pentagon::before {
+  border-width: 0 44px 76.2px 44px; /* Values to create the inner pentagon */
+  border-color: transparent transparent #ffffff transparent; /* White color, change as needed */
+  top: -73.2px; /* Position adjustment for inner pentagon */
+}
+
+.pentagon::after {
+  border-width: 0 46px 80px 46px; /* Values to create the outer pentagon */
+  border-color: transparent transparent #007bff transparent; /* Blue color, change as needed */
+  top: -80px; /* Position adjustment for outer pentagon */
+}
