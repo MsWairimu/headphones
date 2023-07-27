@@ -74,7 +74,6 @@ body {
   text-align: left;
   color: #fff;
 }
-
 .link-block .contact-us a {
   width: 61px;
   height: 15px;
@@ -91,8 +90,6 @@ body {
   display: block;
   cursor: pointer;
 }
-
-
 .hamburger-menu span {
   display: block;
   width: 20px;
@@ -100,7 +97,6 @@ body {
   margin: 6px 0;
   background-color: #fff;
 }
-
 @media (max-width: 480px) {
   .menu-links {
     display: block; /* Show the menu links on small screens */
@@ -140,8 +136,7 @@ letter-spacing: 0px;
 text-align: center;
 color: #FFFF;
       }
-      .text h2{
-       
+      .text h2{      
 height: 20px;
 top: 40px;
 font-family: Source Sans Pro;
@@ -152,33 +147,32 @@ letter-spacing: 0px;
 text-align: center;
 color: #FFFF;
 left: 237px;
-
       }
       .text p{
         height: 104px;
         top: 209px;
         font-family: Source Sans Pro;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0px;
-text-align: center;
-color: #FFFF;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #FFFF;
       }
       .round-orange-button {
         width: 162px;
-height: 44px;
-top: 100px;
-left: 237px;
-box-shadow: 0px 2px 20px 0px #00000080;
-background-color: #ff6565;
-padding: 10px 20px;
-border-radius: 20px;
-color: #FFFF;
-border: none;
-cursor: pointer;
-font-size: 10px;
-transition: 0.2s;
+          height: 44px;
+          top: 100px;
+          left: 237px;
+          box-shadow: 0px 2px 20px 0px #00000080;
+          background-color: #ff6565;
+          padding: 10px 20px;
+          border-radius: 20px;
+          color: #FFFF;
+          border: none;
+          cursor: pointer;
+          font-size: 10px;
+          transition: 0.2s;
       }
 .round-orange-button:hover{
 opacity: 0.9;
@@ -215,6 +209,27 @@ opacity: 0.9;
     text-align: center;
     color: black;
 }
+/* Animation styles for What-we-do section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.what-we-do-section {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+.link-block a {
+  transition: color 0.3s;
+}
+.link-block a:hover {
+  color: #ff6565;
+}
 /*End of what-we-do section*/
 /*Our-results section*/
 * {
@@ -232,15 +247,11 @@ left: 200px;
 margin-top: 100px;
 
 }
-
-/* Style for each column */
 .our-results-section {
   max-width: 220px;
   text-align: center;
   margin: 20px;
 }
-
-/* Style for the icon image */
 .our-results-section img {
   max-width: 100%;
   width: 207px;
@@ -249,8 +260,6 @@ top: 1204px;
 left: 200px;
 background: #FF6565;
 }
-
-/* Style for the heading */
 .our-results-section h3 {
   font-family: Arial, sans-serif;
   font-size: 24px;
@@ -260,10 +269,7 @@ font-size: 18px;
 line-height: 26px;
 letter-spacing: 0px;
 text-align: center;
-
 }
-
-/* Style for the text */
 .our-results-section p {
   font-size: 16px;
   line-height: 1.6;font-family: Source Sans Pro;
@@ -272,7 +278,33 @@ text-align: center;
   line-height: 26px;
   letter-spacing: 0px;
   text-align: center;
-  
+}
+/* Animation styles for Our-results section */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+.our-results-section img {
+  animation: bounce 0.5s;
+}
+.our-results-section h3 {
+  transition: color 0.3s;
+}
+.our-results-section:hover h3 {
+  color: #ff6565;
+}
+.our-results-section p {
+  transition: opacity 0.3s;
+}
+.our-results-section:hover p {
+  opacity: 0.8;
 }
 /*End of Our-results section*/
 
