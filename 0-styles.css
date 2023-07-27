@@ -15,6 +15,7 @@ body {
        background-repeat: no-repeat;
        min-height: 100vh;
        justify-content: center;
+      align-items: center;
     }
 
 .container{
@@ -31,6 +32,7 @@ body {
   padding-bottom: 0px;
 }
 .link-block {
+    align-items: center;
   height: 15px;
   top: 37px;
   left: 946px;
@@ -123,12 +125,12 @@ left: 200.60752868652344px;
       .main-part{
         text-align: center;
         width: 637px;
-height: 313px;
-top: 372px;
-left: 382px;
-align-items: center;
-margin: 0 auto;
-margin-top: 150px;
+          height: 313px;
+          top: 372px;
+          left: 382px;
+          align-items: center;
+          margin: 0 auto;
+          margin-top: 150px;
       }
       .text h1{
 height: 40px;
@@ -184,101 +186,4 @@ transition: 0.2s;
 .round-orange-button:hover{
 opacity: 0.9;
 }
-/*What-we-do section*/
-.section-one{
-    max-width: 1000px;
-    margin: 0 auto; /* Added this to center the div horizontally */
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column; 
-    height: 184px;
-}
-
-.what-we-do-section h1{
-    height: 40px;
-    font-family: SourceSansPro;
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: 0px;
-    text-align: center;
-    background: #fff;
-    margin: 0; /* Added to remove default margins */
-    margin-top: 100px;
-}
-.what-we-do-section p{
-    width: 637px;
-    font-family: Source Sans Pro;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: black;
-}
-/*End of what-we-do section*/
-/*Our-results section*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Center the content horizontally in the row */
-.section-two {
-  display: flex;
-  justify-content: center;
-  color: black;
-height: 193px;
-top: 1191px;
-left: 200px;
-margin-top: 100px;
-
-}
-
-/* Style for each column */
-.our-results-section {
-  max-width: 220px;
-  text-align: center;
-  margin: 20px;
-}
-
-/* Style for the icon image */
-.our-results-section img {
-  max-width: 100%;
-  width: 207px;
-height: 180px;
-top: 1204px;
-left: 200px;
-background: #FF6565;
-
-
-}
-
-/* Style for the heading */
-.our-results-section h3 {
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  margin: 10px 0;
-  font-family: SourceSansPro;
-font-size: 18px;
-line-height: 26px;
-letter-spacing: 0px;
-text-align: center;
-
-}
-
-/* Style for the text */
-.our-results-section p {
-  font-size: 16px;
-  line-height: 1.6;font-family: Source Sans Pro;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: center;
-  
-}
-
-/*End of Our-results section*/
-/*End Main*/
+/*End Main part*/
